@@ -24,7 +24,46 @@ h2 {
 	text-align: center;
 }
 
-article {
+section {
+	display: inline-flex;
+}
+
+#rav_bol {
+	float: left;
+	clear: right;
+	width: 50%;
+	height: 50%;
+	margin: 1em 1.5em 1em 1em;
+	box-shadow: 4px 4px 10px #888888;
+}
+
+#stick_figure {
+	width: 15%;
+	height: 15%;
+}
+
+#personen {
+	padding-left: 0px;
+	text-align: center;
+}
+
+#personen:hover {
+	-webkit-filter: opacity(.2);
+}
+
+.persoon {
+	display: inline;
+}
+
+.hide {
+	display: none;
+}
+
+ol {
+	list-style-type: upper-alpha;
+}
+
+.ingredienten {
 	background-color: #ffffcc;
 	display: inline-block;
 	padding: 1em;
@@ -33,6 +72,20 @@ article {
 	margin: 1em;
 	font-family: 'Indie Flower', cursive;
 	font-size: 1.1em;
+	width: 45%;
+	height: 100%;
+}
+
+.bereiden {
+	background-color: #fff;
+	display: inline;
+	padding: 1em;
+	box-shadow: 4px 4px 10px #888888;
+	float: left;
+	margin: 1em;
+	font-size: 1.1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 100%;
 }
 
 ul {
