@@ -1,0 +1,39 @@
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+	background-color: #669977;
+	margin-left: -8px;
+	margin-top: -8px;
+	width:100%;
+	padding:5px 8px;
+}
+
+h1 {
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3em;
+}
+
+h2 {
+	text-align: center;
+}
+
+article {
+	background-color: #ffffcc;
+	display: inline-block;
+	padding: 1em;
+	box-shadow: 4px 4px 10px #888888;
+	float: right;
+	margin: 1em;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.1em;
+}
+
+ul {
+}
