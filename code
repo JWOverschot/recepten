@@ -1,0 +1,3 @@
+<script>
+	$( "personen" ).mouseover(function()	{    $( "pers9" ).toggleClass ("hide"); $( "#pers10" ).toggleClass( "hide" );});
+</script>
