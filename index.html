@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="styles.css">
   	<link rel="icon" href="icon.gif" type="image/gif" sizes="64x64">
   	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
-  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -39,9 +40,9 @@
 				</ol>
 			</article>
 			<article class="ingredienten">
-			    <script>
+			    <!--<script>
 					$( "#personen" ).mouseover(function()	{  $( "#pers9" ).toggleClass("hide"); $( "#pers10" ).toggleClass("hide");});
-				</script>
+				</script>-->
 				<ul id="personen">
 					<li class="persoon"><img id="stick_figure" src="stick_figure.png"></li>
 					<li class="persoon"><img id="stick_figure" src="stick_figure.png"></li>
@@ -54,20 +55,25 @@
 					<li class="persoon" id="pers9"><img id="stick_figure" src="stick_figure.png"></li>
 					<li class="persoon" id="pers10"><img id="stick_figure" src="stick_figure.png"></li>
 				</ul>
+
+				  Aantal personen: <input type="number" value="8" min="1">
+
 				<h2>Ingredienten</h2>
 				<ul>
 					<h3>Voor de vulling</h3>
-					<li>400 g varkensgehakt</li>
-					<li>400 g kalfs- of rundergehakt</li>
+					<li><span id="g1">400</span> g varkensgehakt</li>
+					<li><span id="g2">400</span> g kalfs- of rundergehakt</li>
 					<li>olijfolie</li>
-					<li>2 tenen knoflook</li>
-					<li>2 uien</li>
-					<li>2 wortels</li>
-					<li>2 stengels bleekselderij</li>
-					<li>200 ml chianti classico</li>
-					<li>2 blikken van 400 g gepelde tomaten</li>
-					<li>100 g Parmezaanse kaas, plus extra voor erbij</li>
+					<li><span id="g3">2</span> tenen knoflook</li>
+					<li><span id="g4">2</span> uien</li>
+					<li><span id="g5">2</span> wortels</li>
+					<li><span id="g6">2</span> stengels bleekselderij</li>
+					<li><span id="g7">200</span> ml chianti classico</li>
+					<li><span id="g8">2</span> blikken van <span id="g9">400</span> g gepelde tomaten</li>
+					<li><span id="g10">100</span> g Parmezaanse kaas, plus extra voor erbij</li>
 				</ul>
+				</head>
+				<body>
 				<ul>
 					<h3>Voor de pasta</h3>
 					<li>1 recept <a href="https://www.jamiemagazine.nl/recepten/pastadeeg.html">fluweelzacht pastadeeg</a></li>
@@ -85,4 +91,13 @@
 	</main>
 	<footer></footer>
 </body>
+<script>
+	$(document).ready(function(){
+		$("input")
+			.keyup(function() {
+		    var value = $( this ).val();
+		    $( "#g1" ).text( value );
+	  		});
+	});
+</script>
 </html>
