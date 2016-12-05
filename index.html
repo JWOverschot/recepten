@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<title>Ravioli bolognese met basilicum</title>
 	<link rel="stylesheet" href="styles.css">
-  	<link rel="icon" href="icon.gif" type="image/gif" sizes="64x64">
   	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
 	
 </head>
 <body>
@@ -56,21 +56,21 @@
 					<li class="persoon" id="pers10"><img id="stick_figure" src="stick_figure.png"></li>
 				</ul>
 
-				  Aantal personen: <input type="number" value="8" min="1">
+				  Aantal personen: <input oninput="calculate()" id="people-input" type="number" value="8" min="1">
 
 				<h2>Ingredienten</h2>
 				<ul>
 					<h3>Voor de vulling</h3>
-					<li><span id="g1">400</span> g varkensgehakt</li>
-					<li><span id="g2">400</span> g kalfs- of rundergehakt</li>
+					<li><span class="g1">400</span> g varkensgehakt</li>
+					<li><span class="g1">400</span> g kalfs- of rundergehakt</li>
 					<li>olijfolie</li>
-					<li><span id="g3">2</span> tenen knoflook</li>
-					<li><span id="g4">2</span> uien</li>
-					<li><span id="g5">2</span> wortels</li>
-					<li><span id="g6">2</span> stengels bleekselderij</li>
-					<li><span id="g7">200</span> ml chianti classico</li>
-					<li><span id="g8">2</span> blikken van <span id="g9">400</span> g gepelde tomaten</li>
-					<li><span id="g10">100</span> g Parmezaanse kaas, plus extra voor erbij</li>
+					<li><span class="g2">2</span> tenen knoflook</li>
+					<li><span class="g2">2</span> uien</li>
+					<li><span class="g2">2</span> wortels</li>
+					<li><span class="g2">2</span> stengels bleekselderij</li>
+					<li><span id="g3">200</span> ml chianti classico</li>
+					<li><span class="g2">2</span> blikken van 400 g gepelde tomaten</li>
+					<li><span id="g4">100</span> g Parmezaanse kaas, plus extra voor erbij</li>
 				</ul>
 				</head>
 				<body>
@@ -81,23 +81,14 @@
 				</ul>
 				<ul>
 					<h3>Voor de saus</h3>
-					<li>4 tenen knoflook</li>
-					<li>1-2 verse rode Spaanse pepers</li>
-					<li>3 blikken van 400 g gepelde tomaten</li>
-					<li>een paar takjes vers basilicum</li>
+					<li><span id="g5">4</span> tenen knoflook</li>
+					<li><span id="g6">1</span> - <span class="g2">2</span> verse rode Spaanse pepers</li>
+					<li><span id="g7">3</span> blikken van <span class="g1">400</span> g gepelde tomaten</li>
+					<li><span id="t1">een paar</span> takjes vers basilicum</li>
 				</ul>
 			</article>
 		</section>
 	</main>
 	<footer></footer>
 </body>
-<script>
-	$(document).ready(function(){
-		$("input")
-			.keyup(function() {
-		    var value = $( this ).val();
-		    $( "#g1" ).text( value );
-	  		});
-	});
-</script>
 </html>
