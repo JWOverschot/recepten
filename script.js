@@ -2,7 +2,7 @@ function calculate() {
 	var a = document.getElementById("people-input").value;
 
 	var sum1 =  a * 50;
-	for (var i = 0; i <= 2; i++) {
+	for (var i = 0; i <= 1; i++) {
 		document.getElementsByClassName("g1")[i].innerHTML = sum1;
 	}
 
